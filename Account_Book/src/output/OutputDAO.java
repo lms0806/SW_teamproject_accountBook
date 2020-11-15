@@ -12,9 +12,9 @@ public class OutputDAO {
 	
 	public OutputDAO() {
 		try {
-			String dbURL = "jdbc:mysql://localhost:3306/account_book?serverTimezone=UTC";
-			String dbID = "root";
-			String dbPassword = "3510";
+			String dbURL = "jdbc:mysql://localhost:/account_book?serverTimezone=UTC";
+			String dbID = "";
+			String dbPassword = "";
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
 		} catch(Exception e) {
