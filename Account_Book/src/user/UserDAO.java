@@ -12,7 +12,7 @@ public class UserDAO {
 	
 	public UserDAO() {
 		try {
-			String dbURL = "jdbc:mysql://localhost:/account_book?serverTimezone=UTC";
+			String dbURL = "jdbc:mysql://localhost:/";
 			String dbID = "";
 			String dbPassword = "";
 			Class.forName("com.mysql.jdbc.Driver");
