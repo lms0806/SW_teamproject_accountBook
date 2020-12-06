@@ -12,9 +12,9 @@ public class MembersDAO {
 	
 	public MembersDAO() {
 		try {
-			String dbURL = "jdbc:mysql://localhost:3306/account_book?serverTimezone=UTC";
-			String dbID = "root";
-			String dbPassword = "3510";
+			String dbURL = "jdbc:mysql://localhost/";
+			String dbID = "";
+			String dbPassword = "";
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
 		} catch(Exception e) {
