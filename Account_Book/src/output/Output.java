@@ -1,11 +1,19 @@
 package output;
 
 public class Output {
+	private int outputid;
 	private String userID;
 	private String category;
 	private String Content;
 	private int money;
 	private String webDate;
+	
+	public int getOutputid() {
+		return outputid;
+	}
+	public void setOutputid(int outputid) {
+		this.outputid = outputid;
+	}
 	public String getUserID() {
 		return userID;
 	}

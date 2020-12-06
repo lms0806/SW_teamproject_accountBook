@@ -30,10 +30,10 @@
 		</div>
 		<div class = "collapse navbar-collapse" id = "bs-example-navbar-collapse-1">
 			<ul class = "nav navbar-nav">
-				<li class = "active"><a href = "main.jsp">메인</a><li>
+				<li><a href = "main.jsp">메인</a><li>
 				<li><a href = "inputlist.jsp">수입</a><li>
 				<li><a href = "outputlist.jsp">지출</a><li>
-				<li><a href = "otherchoice.jsp">다른사람</a></li>
+				<li class = "active"><a href = "otherchoice.jsp">다른사람</a></li>
 			</ul>
 			<%
 				if(userID == null){
@@ -69,38 +69,15 @@
 		</div>
 	</nav>
 	<div class="container">
-		<div class="jumbotron">
-			<div class="container">
-				<h1>웹 사이트 소개</h1>
-				<p>5조 가계부 팀프로젝트 사이트입니다. </p>
-				<p><a class="btn btn-primary btn-pull" href="https://lms0806.github.io/webs/" role="button">제작자 자세히 알아보기</a></p>
-			</div>
+		<h1>원하는 수입의 다른사람 가계부를 볼 수 있습니다.</h1>
+		<div class="container">
+			<p><a class="btn btn-primary btn-pull" href="otherlist.jsp?min=0&max=1000000" role="button">0 ~ 1,000,000(백만)</a></p>
 		</div>
-	</div>
-	<div class="container">
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slid-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slid-to="1"></li>
-				<li data-target="#myCarousel" data-slid-to="2"></li>
-			</ol>
-			<div class="carousel-inner">
-				<div class="item active">
-					<img src="images/coding.jpg">
-				</div>
-				<div class="item">
-					<img src="images/coding.jpg">
-				</div>
-				<div class="item">
-					<img src="images/coding.jpg">
-				</div>
-			</div>
-			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left"></span>
-			</a>
-			<a class="right carousel-control" href="#myCarousel" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right"></span>
-			</a>
+		<div class="container">
+			<p><a class="btn btn-primary btn-pull" href="otherlist.jsp?min=1000000&max=10000000" role="button">1,000,000 ~ 10,000,000(천만)</a></p>
+		</div>
+		<div class="container">
+			<p><a class="btn btn-primary btn-pull" href="otherlist.jsp?min=10000000" role="button">그 외</a></p>
 		</div>
 	</div>
 	<script src = "https://code.jquery.com/jquery-3.1.1.min.js"></script>

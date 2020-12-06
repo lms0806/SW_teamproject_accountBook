@@ -1,12 +1,19 @@
 package input;
 
 public class Input {
+	private int inputid;
 	private String userID;
 	private String category;
-	private String Content;
+	private String content;
 	private int money;
 	private String webDate;
 	
+	public int getInputid() {
+		return inputid;
+	}
+	public void setInputid(int inputid) {
+		this.inputid = inputid;
+	}
 	public String getUserID() {
 		return userID;
 	}
@@ -20,11 +27,10 @@ public class Input {
 		this.category = category;
 	}
 	public String getContent() {
-		return Content;
+		return content;
 	}
-	
 	public void setContent(String content) {
-		Content = content;
+		this.content = content;
 	}
 	public int getMoney() {
 		return money;

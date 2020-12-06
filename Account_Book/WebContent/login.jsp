@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name = "viewport" content = "width=device-width", initial-scale = "1">
+<meta name="viewport" content="width=device-width initial-scale=1">
 <link rel = "stylesheet" href = "css/bootstrap.min.css">
 <link rel = "stylesheet" href = "css/custom.css">
-<title>서원대학교 컴퓨터공학과 게시판</title>
+<title>가계부</title>
 </head>
 <body>
 	<nav class = "navbar navbar-default">
@@ -24,8 +24,9 @@
 		<div class = "collapse navbar-collapse" id = "bs-example-navbar-collapse-1">
 			<ul class = "nav navbar-nav">
 				<li><a href = "main.jsp">메인</a><li>
-				<li><a href = "bbs.jsp">수입</a><li>
-				<li><a href="MyWrite.jsp">지출</a><li>
+				<li><a href = "inputlist.jsp">수입</a><li>
+				<li><a href="output.jsp">지출</a><li>
+				<li><a href = "otherchoice.jsp">다른사람</a></li>
 			</ul>
 			<ul class = "nav navbar-nav navbar-right">
 				<li class = "dropdown">
