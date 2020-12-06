@@ -25,8 +25,8 @@
 			<ul class = "nav navbar-nav">
 				<li><a href = "main.jsp">메인</a><li>
 				<li><a href = "inputlist.jsp">수입</a><li>
-				<li><a href="output.jsp">지출</a><li>
-				<li><a href = "otherchoice.jsp">다른사람</a></li>
+				<li><a href="outputlist.jsp">지출</a><li>
+				<li><a href = "otherchoice.jsp">타 사용자 가계부</a></li>
 			</ul>
 			<ul class = "nav navbar-nav navbar-right">
 				<li class = "dropdown">
@@ -50,12 +50,6 @@
 				<form method = "post" action = inputinsertaction.jsp>
 					<h3 style = "text-align: center;">수입 입력</h3>
 					<div class = "form-group">
-						<select name="category">
-	    					<option value="">카테고리 선택</option>
-   							<option value="월급">월급</option>
-    						<option value="용돈">용돈</option>
-    						<option value="기타">기타</option>
-						</select>
 						<input type = "text" class = "form-control" placeholder = "카테고리" name = "category" maxlength = "20"> 
 					</div>
 					<div class = "form-group">

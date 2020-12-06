@@ -33,7 +33,7 @@
 				<li><a href = "main.jsp">메인</a><li>
 				<li><a href = "inputlist.jsp">수입</a><li>
 				<li><a href = "outputlist.jsp">지출</a><li>
-				<li class = "active"><a href = "otherchoice.jsp">다른사람</a></li>
+				<li class = "active"><a href = "otherchoice.jsp">타 사용자 가계부</a></li>
 			</ul>
 			<%
 				if(userID == null){
@@ -74,7 +74,16 @@
 			<p><a class="btn btn-primary btn-pull" href="otherlist.jsp?min=0&max=1000000" role="button">0 ~ 1,000,000(백만)</a></p>
 		</div>
 		<div class="container">
-			<p><a class="btn btn-primary btn-pull" href="otherlist.jsp?min=1000000&max=10000000" role="button">1,000,000 ~ 10,000,000(천만)</a></p>
+			<p><a class="btn btn-primary btn-pull" href="otherlist.jsp?min=1000001&max=3000000" role="button">1,000,001 ~ 3,000,000(천만)</a></p>
+		</div>
+		<div class="container">
+			<p><a class="btn btn-primary btn-pull" href="otherlist.jsp?min=3000001&max=50000000" role="button">3,000,001 ~ 5,000,000(오백만)</a></p>
+		</div>
+		<div class="container">
+			<p><a class="btn btn-primary btn-pull" href="otherlist.jsp?min=5000001&max=70000000" role="button">5,000,001 ~ 7,000,000(칠백만)</a></p>
+		</div>
+		<div class="container">
+			<p><a class="btn btn-primary btn-pull" href="otherlist.jsp?min=7000001&max=90000000" role="button">7,000,001 ~ 9,000,000(구백만)</a></p>
 		</div>
 		<div class="container">
 			<p><a class="btn btn-primary btn-pull" href="otherlist.jsp?min=10000000" role="button">그 외</a></p>

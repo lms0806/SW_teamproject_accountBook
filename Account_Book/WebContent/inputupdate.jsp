@@ -61,7 +61,7 @@
 				<li><a href = "main.jsp">메인</a><li>
 				<li class = "active"><a href = "inputlist.jsp">수입</a><li>
 				<li><a href = "output.jsp">지출</a><li>
-				<li><a href = "otherchoice.jsp">다른사람</a></li>
+				<li><a href = "otherchoice.jsp">타 사용자 가계부</a></li>
 			</ul>
 			<ul class = "nav navbar-nav navbar-right">
 				<li class = "dropdown">

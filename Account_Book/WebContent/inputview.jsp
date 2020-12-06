@@ -57,7 +57,7 @@
 				<li><a href = "main.jsp">메인</a><li>
 				<li class = "active"><li><a href = "inputlist.jsp">수입</a><li>
 				<li><a href = "outputlist.jsp">지출</a><li>
-				<li><a href = "otherchoice.jsp">다른사람</a></li>
+				<li><a href = "otherchoice.jsp">타 사용자 가계부</a></li>
 			</ul>
 			<%
 				if(userID == null){

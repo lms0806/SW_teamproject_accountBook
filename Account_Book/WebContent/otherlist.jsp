@@ -57,7 +57,7 @@
 				<li><a href = "main.jsp">메인</a><li>
 				<li><a href = "inputlist.jsp">수입</a><li>
 				<li><a href = "outputlist.jsp">지출</a><li>
-				<li class = "active"><a href = "otherchoice.jsp">다른사람</a></li>
+				<li class = "active"><a href = "otherchoice.jsp">타 사용자 가계부</a></li>
 			</ul>
 			<%
 				//로그인안된경우
@@ -106,7 +106,7 @@
 						TotalDAO totalDAO = new TotalDAO();
 						ArrayList<Total> list = totalDAO.getList(pageNumber);
 						for(int i = 0; i < list.size(); i++){
-							int total = list.get(i).getInputmoney() + list.get(i).getOutputmoney();
+							int total = list.get(i).getInputmoney() - list.get(i).getOutputmoney();
 							System.out.println(min);
 							System.out.println(max);
 							if(total >= min && total < max && max != 0){
